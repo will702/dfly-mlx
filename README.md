@@ -1,5 +1,9 @@
 # dfly-mlx
 
+[![PyPI](https://img.shields.io/pypi/v/dfly-mlx)](https://pypi.org/project/dfly-mlx/)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-MLX%20Community-yellow)](https://huggingface.co/mlx-community/Qwen3-8B-DFly-MLX)
+[![GitHub release](https://img.shields.io/github/v/release/will702/dfly-mlx)](https://github.com/will702/dfly-mlx/releases/latest)
+
 Native [DFly](https://arxiv.org/abs/2607.25852) speculative decoding for Apple
 Silicon. One MLX target, one official drafter, one reproducible benchmark.
 
@@ -23,7 +27,25 @@ The Qwen3-8B target verifies every proposal before it is committed.
 
 ## Install
 
+From [PyPI](https://pypi.org/project/dfly-mlx/):
+
 ```sh
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install dfly-mlx
+```
+
+Or with [Homebrew](https://github.com/will702/homebrew-tap):
+
+```sh
+brew install will702/tap/dfly-mlx
+```
+
+For development from source:
+
+```sh
+git clone https://github.com/will702/dfly-mlx.git
+cd dfly-mlx
 python3.11 -m venv .venv
 source .venv/bin/activate
 pip install -e '.[convert,test]'
@@ -37,6 +59,7 @@ pins the last correct upstream revision, `5712926`, validates its architecture,
 and writes MLX safetensors.
 
 ```sh
+pip install 'dfly-mlx[convert]'
 dfly-mlx convert --output ./models/qwen3-8b-dfly-mlx
 ```
 
