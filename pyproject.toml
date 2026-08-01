@@ -24,7 +24,7 @@ dfly-mlx = "dfly_mlx.cli:main"
 
 [project.urls]
 Repository = "https://github.com/will702/dfly-mlx"
-Model = "https://huggingface.co/will702/Qwen3-8B-DFly-MLX"
+Model = "https://huggingface.co/mlx-community/Qwen3-8B-DFly-MLX"
 Paper = "https://arxiv.org/abs/2607.25852"
 
 [tool.setuptools.packages.find]

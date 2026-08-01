@@ -49,7 +49,7 @@ model license.
 Or download the ready-to-use MLX conversion:
 
 ```sh
-hf download will702/Qwen3-8B-DFly-MLX \
+hf download mlx-community/Qwen3-8B-DFly-MLX \
   --local-dir ./models/qwen3-8b-dfly-mlx
 ```
 
