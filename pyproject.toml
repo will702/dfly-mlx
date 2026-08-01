@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dfly-mlx"
+version = "0.1.0"
+description = "Native DFly speculative decoding for Apple Silicon"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = [
+  "dflash-mlx>=0.1.8,<0.2",
+  "mlx>=0.31.0",
+  "mlx-lm>=0.31.0",
+]
+
+[project.optional-dependencies]
+convert = ["huggingface-hub>=0.34", "safetensors>=0.4", "torch>=2.6"]
+test = ["pytest>=8"]
+
+[project.scripts]
+dfly-mlx = "dfly_mlx.cli:main"
+
+[project.urls]
+Repository = "https://github.com/will702/dfly-mlx"
+Model = "https://huggingface.co/will702/Qwen3-8B-DFly-MLX"
+Paper = "https://arxiv.org/abs/2607.25852"
+
+[tool.setuptools.packages.find]
+include = ["dfly_mlx*"]
+
+[tool.setuptools.package-data]
+dfly_mlx = ["prompts.jsonl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,21 @@
+dfly-mlx
+Copyright 2026 Willson
+
+This product includes software and model-architecture adaptations from:
+
+1. AngelSpec, Copyright (C) 2026 Tencent, Apache License 2.0. Ported from
+   revision d3412bed231025ea85d35dbf5e0af44f1ac62a5b.
+   https://github.com/Tencent/AngelSpec
+
+2. dflash-mlx, Copyright 2026 bstnxbt, Apache License 2.0. The implementation
+   was validated against revision 9ca002898b48e14c9727dec17299f497e8467870
+   (v0.1.10) and supports the public PyPI runtime from v0.1.8.
+   https://github.com/bstnxbt/dflash-mlx
+
+3. vLLM, copyright the vLLM contributors, Apache License 2.0. The sequential
+   hidden-correction inference semantics were adapted from its Qwen3 DFly
+   proposer implementation.
+   https://github.com/vllm-project/vllm/pull/50246
+
+DFly is described in "AngelSpec: Towards Real-World High Performance Inference
+with Speculative Decoding" (arXiv:2607.25852).
