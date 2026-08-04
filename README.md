@@ -1,4 +1,4 @@
-# dfly-mlx
+# DFLX
 
 [![PyPI](https://img.shields.io/pypi/v/dfly-mlx)](https://pypi.org/project/dfly-mlx/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-MLX%20Community-yellow)](https://huggingface.co/mlx-community/Qwen3-8B-DFly-MLX)
